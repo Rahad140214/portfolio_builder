@@ -1,3 +1,76 @@
-.title{
-	color:red;
+
+.header-div {
+  border: 4px outset green;
+  border-radius: 10px 10px;
+  display: flex;
+}
+.nameDiv{
+  
+  background-color: white;
+  display:flex;
+}
+.h1Div{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.h1{
+  
+  color:#C8C8C8;
+  text-align: left;
+}
+.a{
+   color:blue;
+}
+.myDiv2{
+ 		
+}
+.hr{
+  height:7px; 
+  border:none; 
+  color:#000; 
+  background-color:#2DC261; 
+  width:120px; 
+  }
+
+.myDiv3{
+  flex-direction: row;
+  display: flex;
+}
+
+.tabDiv{
+  flex-direction: row;
+  display: flex;
+}
+
+
+.myDiv4{
+  flex-direction: row;
+  display: flex;
+  text-align: left;
+  margin-top: 0 px;
+}
+
+.myDiv5{
+  flex-direction: column;
+  display: flex;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom:200px;
+}
+
+.table1{
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+.table1, .th1, .td1 {
+  border: 1px solid black;
+}
+
+.title-line {
+  height: 7px;
+  background-color: #2DC261;
+  width: 10%
 }
