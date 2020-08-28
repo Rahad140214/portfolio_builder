@@ -4,6 +4,22 @@
   border-radius: 10px 10px;
   display: flex;
 }
+
+.section-header-div {
+  height: 7px;
+  background-color: #2DC261;
+  width: 13%;
+  position: absolute;
+  top: 38%;
+}
+
+.section-header-title {
+  color:#2DC261;
+  font-size: x-large;
+  position: relative;
+  left: 18%;
+}
+
 .nameDiv{
   
   background-color: white;
