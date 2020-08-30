@@ -24,23 +24,103 @@ staticData = {
             "current_designation": {
                 "designation": "Bachelor of Science",
                 "institution": "Computer Science & Engineering Discipline",
-                "versity_address": "Khulna University, Khunla-9208."
+                "currentDesignationAddress": "Khulna University, Khunla-9208."
             },
 
             "education": [
                 {
-                    "degree": "Bachelor of Science in Computer Science & Engineering,",
                     "degree_details":{
                         "degree": "Bachelor of Science in Computer Science & Engineering,",
-                        "dept": "Computer Science & Engineering discipline,",
+                        "department": "Computer Science & Engineering discipline,",
                         "institution": "Khulna University, Khulna,",
                         "result": "CGPA 3.10 out of 4.00",
                         "duration": "2014-2018"
                     }
                 },
-                {},
-                {}
-            ]
+                {
+                    "degree_details":{
+                        "degree": "Higher Secondary Certificate,",
+                        "department": "Science Group,",
+                        "institution": "Guruduyal Govt. College, Kishoregonj,",
+                        "result": "GPA 5.00 out of 5.00.",
+                        "duration": "2010-2012"
+                    }
+                },
+                {
+                    "degree_details":{
+                        "degree": "School Secondary Certificate,",
+                        "department": "Science Group,",
+                        "institution": "Karimganj Pilot Govt. High School, Kishoregonj,",
+                        "result": "GPA 4.81 out of 5.00.",
+                        "duration": "Passing Year,<br>2010"
+                    }
+                }
+            ],
+
+            "technicalSkills": {
+                "language": ["C", "C++","C#", "Java", "Android (GDG Certified)", "80x86 Assembly"],
+                "web": ["PHP", "Javascript", "HTML", "CSS"],
+                "familiarWith": [ "MATLAB" , "Basic Photoshop, Microsoft Office", "Prolog"],
+                "tools": ["Trello", "LaTex", "Microsoft Visual Studio", "GNU-GCC", "Andriod Studio", "Sublime Text", "MySQL", "Eclipse", "FileZilla"]
+
+            },
+
+            "projectExperience": [
+                {
+                    "project_details":{
+                        "projectName": "CSEKU Teacher <br>Profile",
+                        "projectDescription": "Specially designed for CSEKU official website. Worked in PHP, Laravel(basic part) & familiar with bootstrapping, Trello, basic photoshop",
+                        "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                    }
+                },
+                {
+                    "project_details":{
+                        "projectName": "Higher Secondary Certificate,",
+                        "department": "Science Group,",
+                        "institution": "Guruduyal Govt. College, Kishoregonj,",
+                        "result": "GPA 5.00 out of 5.00.",
+                        "duration": "2010-2012"
+                    }
+                },
+                {
+                    "project_details":{
+                        "degree": "School Secondary Certificate,",
+                        "department": "Science Group,",
+                        "institution": "Karimganj Pilot Govt. High School, Kishoregonj,",
+                        "result": "GPA 4.81 out of 5.00.",
+                        "duration": "Passing Year,<br>2010"
+                    }
+                }
+            ],
+
+            "projectExperience": [
+                {
+                    "projectName": "CSEKU Teacher <br>Profile",
+                    "projectDescription": "Specially designed for CSEKU official website. Worked in PHP, Laravel(basic part) & familiar with bootstrapping, Trello, basic photoshop",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Bulk SMS <br>Platform",
+                    "projectDescription": "Worked in PHP, Ajax, JQuary, JavaScript, MySql database.",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Coaching Center <br>Management <br>System",
+                    "projectDescription": "Designed for a local Coaching center as their official website. Worked in PHP, JQuary, JavaScript, MySql database",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Offline Quizzing <br>App",
+                    "projectDescription": "Categorical offline desktop app smeared with interesting scoring method. Worked in C# and Access database. ",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Online Movie <br>Database",
+                    "projectDescription": " A bangla movie database like IMDB with simple functionality providing basic info of a movie. Worked in PHP, JQuary, MySql database.",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                }
+                
+            ],
         }
 
     ]
