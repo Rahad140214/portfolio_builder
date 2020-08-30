@@ -112,6 +112,40 @@ staticData = {
                     "listOfActivities5": "Participated various local Project Exhibition, Programming Contest etc.",
                 }
             ],
+
+            "projectReference": [
+                {
+                    "projectStorage": "Live Project",
+                    "projectTitle": "CSE KU Website",
+                    "projectUrl": "http://beta.cseku.ac.bd/cseKuWebsite/public/faculty"
+                },
+                {
+                    "projectStorage": "Bit Bucket",
+                    "projectTitle": "Silly_Order",
+                    "projectUrl": "https://bitbucket.org/silly_coder/"
+                },
+                {
+                    "projectStorage": "Coaching Center Management System",
+                    "projectTitle": "Silly_Mredul",
+                    "projectUrl": "https://github.com/sillyMredul"
+                }
+                
+            ],
+            "references": [
+                {
+                    "teacherName": "Dr. Kamrul Hasan Talukder ",
+                    "teacherDesignation": "Professor",
+                    "teacherInstitute": "Khulna University ",
+                    "teacherEmail": "khtalukdar@gmail.com",
+                },
+                {
+                    "teacherName": "Dr. Kazi Masudul Alam",
+                    "teacherDesignation": "Associate Professor",
+                    "teacherInstitute": "Khulna University ",
+                    "teacherEmail": "kazi@cseku.ac.bd",
+                }
+                
+            ],
         }
 
     ]

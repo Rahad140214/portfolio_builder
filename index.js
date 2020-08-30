@@ -80,3 +80,27 @@ document.getElementById('listOfActivities2').innerHTML = staticData.userDetail[0
 document.getElementById('listOfActivities3').innerHTML = staticData.userDetail[0].activities[0].listOfActivities3;
 document.getElementById('listOfActivities4').innerHTML = staticData.userDetail[0].activities[0].listOfActivities4;
 document.getElementById('listOfActivities5').innerHTML = staticData.userDetail[0].activities[0].listOfActivities5;
+
+//Project References
+document.getElementById('referenceStorage1').innerHTML = staticData.userDetail[0].projectReference[0].projectStorage;
+document.getElementById('referenceTitle1').innerHTML = staticData.userDetail[0].projectReference[0].projectTitle;
+document.getElementById('referenceUrl1').href = staticData.userDetail[0].projectReference[0].projectUrl;
+
+document.getElementById('referenceStorage2').innerHTML = staticData.userDetail[0].projectReference[1].projectStorage;
+document.getElementById('referenceTitle2').innerHTML = staticData.userDetail[0].projectReference[1].projectTitle;
+document.getElementById('referenceUrl2').href = staticData.userDetail[0].projectReference[1].projectUrl;
+
+document.getElementById('referenceStorage3').innerHTML = staticData.userDetail[0].projectReference[2].projectStorage;
+document.getElementById('referenceTitle3').innerHTML = staticData.userDetail[0].projectReference[2].projectTitle;
+document.getElementById('referenceUrl3').href = staticData.userDetail[0].projectReference[2].projectUrl;
+
+//References
+document.getElementById('teacherName1').innerHTML = staticData.userDetail[0].references[0].teacherName;
+document.getElementById('teacherDesignation1').innerHTML = staticData.userDetail[0].references[0].teacherDesignation;
+document.getElementById('teacherInstitute1').innerHTML = staticData.userDetail[0].references[0].teacherInstitute;
+document.getElementById('teacherEmail1').innerHTML = staticData.userDetail[0].references[0].teacherEmail;
+
+document.getElementById('teacherName2').innerHTML = staticData.userDetail[0].references[1].teacherName;
+document.getElementById('teacherDesignation2').innerHTML = staticData.userDetail[0].references[1].teacherDesignation;
+document.getElementById('teacherInstitute2').innerHTML = staticData.userDetail[0].references[1].teacherInstitute;
+document.getElementById('teacherEmail2').innerHTML = staticData.userDetail[0].references[1].teacherEmail;
