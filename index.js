@@ -67,3 +67,16 @@ document.getElementById('projectUrl3').href = staticData.userDetail[0].projectEx
 document.getElementById('projectName4').innerHTML = staticData.userDetail[0].projectExperience[4].projectName;
 document.getElementById('projectDescription4').innerHTML = staticData.userDetail[0].projectExperience[4].projectDescription;
 document.getElementById('projectUrl4').href = staticData.userDetail[0].projectExperience[4].projectUrl;
+
+//Research project
+document.getElementById('thesisType').innerHTML = staticData.userDetail[0].researchProject[0].thesisType;
+document.getElementById('publisehedIn').innerHTML = staticData.userDetail[0].researchProject[0].publisehedIn;
+document.getElementById('researchTopic').innerHTML = staticData.userDetail[0].researchProject[0].researchTopic;
+document.getElementById('researchDesc').innerHTML = staticData.userDetail[0].researchProject[0].researchDesc;
+
+//Activites
+document.getElementById('listOfActivities1').innerHTML = staticData.userDetail[0].activities[0].listOfActivities1;
+document.getElementById('listOfActivities2').innerHTML = staticData.userDetail[0].activities[0].listOfActivities2;
+document.getElementById('listOfActivities3').innerHTML = staticData.userDetail[0].activities[0].listOfActivities3;
+document.getElementById('listOfActivities4').innerHTML = staticData.userDetail[0].activities[0].listOfActivities4;
+document.getElementById('listOfActivities5').innerHTML = staticData.userDetail[0].activities[0].listOfActivities5;

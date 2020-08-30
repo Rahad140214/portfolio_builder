@@ -67,34 +67,6 @@ staticData = {
 
             "projectExperience": [
                 {
-                    "project_details":{
-                        "projectName": "CSEKU Teacher <br>Profile",
-                        "projectDescription": "Specially designed for CSEKU official website. Worked in PHP, Laravel(basic part) & familiar with bootstrapping, Trello, basic photoshop",
-                        "projectUrl": "https://bitbucket.org/account/legacy-signin/"
-                    }
-                },
-                {
-                    "project_details":{
-                        "projectName": "Higher Secondary Certificate,",
-                        "department": "Science Group,",
-                        "institution": "Guruduyal Govt. College, Kishoregonj,",
-                        "result": "GPA 5.00 out of 5.00.",
-                        "duration": "2010-2012"
-                    }
-                },
-                {
-                    "project_details":{
-                        "degree": "School Secondary Certificate,",
-                        "department": "Science Group,",
-                        "institution": "Karimganj Pilot Govt. High School, Kishoregonj,",
-                        "result": "GPA 4.81 out of 5.00.",
-                        "duration": "Passing Year,<br>2010"
-                    }
-                }
-            ],
-
-            "projectExperience": [
-                {
                     "projectName": "CSEKU Teacher <br>Profile",
                     "projectDescription": "Specially designed for CSEKU official website. Worked in PHP, Laravel(basic part) & familiar with bootstrapping, Trello, basic photoshop",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
@@ -120,6 +92,25 @@ staticData = {
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 }
                 
+            ],
+
+            "researchProject": [
+                {
+                    "thesisType": "B.Sc Thesis<br> (under review)",
+                    "publisehedIn": "submitted to Applied Soft Computing journal Elsevier",
+                    "researchTopic": "DNA Motif discovery using Chemical Reaction Optimization",
+                    "researchDesc": "Surveyed all the existing algorithms for discovering motifs from a DNA sequence. And proposed an approach for <br>predicting motif from a DNA sequence for a bunch of species using Chemical Reaction Optimization algorithm."
+                }
+            ],
+
+            "activities": [
+                {
+                    "listOfActivities1": "Always participated in College & University Level co-curricular activities.",
+                    "listOfActivities2": "Served as Class Representative (CR) several times.",
+                    "listOfActivities3": "Worked as potential coordinator for arranging central KUCSE Tour-2k17.",
+                    "listOfActivities4": "Secured 3rd position in IT Quiz contest at CSE Fest-2015.",
+                    "listOfActivities5": "Participated various local Project Exhibition, Programming Contest etc.",
+                }
             ],
         }
 
