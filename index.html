@@ -3,7 +3,7 @@
 <body>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <div style="padding-left: 15%; padding-right: 15%;">
         <div class="topnav">
             <a class="active" href="#home">Login</a>
@@ -12,37 +12,34 @@
 
         <div class="header-div">
             <div style="padding: 8px; display: flex">
-                <img src="demo.jpg" height="120">
+                <img id= "imageURL" src="" height="120" />
                 <div style="text-align: left; padding: 0px 10px;">
-                    <h3>MREDUL HASAN</h3>
+                    <h3 id="userName"></h3>
                     <span style="font-size: smaller;color: gray;">
-                        Bachelor of Science <br>
-                        Computer Science & Engineering Discipline <br>
-                        Khulna University, Khunla-9208
+                        <span id="currentDesignationTitle"></span> <br>
+                        <span id="institution"></span><br>
+                        <span id="versity_address"></span>
                     </span>
                 </div>
             </div>
             
             <div style="right: 16%; position: absolute; text-align: right;">
-                <div><a href=" https://mail.google.com/">mredhulhasan93@gmail.com</a><i style="padding: 0px 10px";" class="fa fa-envelope" aria-hidden="true"></i></div>
-                <div><a href=" https://www.linkedin.com/in/mredul-hasan-1581b0115/"> mredul-hasan-1581b0115</a><i style="padding: 0px 10px";" class="fa fa-linkedin" aria-hidden="true"></i></div>
-                <div><a href=" https://bitbucket.org/silly_coder/"> bitbucket.org/silly_coder</a><i style="padding: 0px 10px";" class="fa fa-bitbucket"></i></div>
-                <div><span>+8801929-326055</span><i style="padding: 0px 10px";" class="fa fa-phone" aria-hidden="true"></i></div>
+                <div><a id= "email" href="">mredulhasan93@gmail.com</a><i style="padding: 0px 10px;" class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div><a id= "linkedInID" href= ""> </a><i style="padding: 0px 10px;" class="fa fa-linkedin" aria-hidden="true"></i></div>
+                <div><a id= "githubID" href=""> </a><i style="padding: 0px 10px;" class="fa fa-github"></i></div>
+                <div><span id= "mobile" ></span><i style="padding: 0px 10px;" class="fa fa-phone" aria-hidden="true"></i></div>
                 <div>
-                    <span>
-                        Mizan Park, Modakpara, <i style="padding: 0px 10px";" class="fa fa-map-marker" aria-hidden="true"></i><br>
-                        Karimganj, Kishoreganj-2300
+                    <span id= "address">
                     </span>
+
+                     <i style="padding: 0px 10px;" class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 
 
             </div>     
         </div>
         
-        <h4 style="color: #C8C8C8; text-align: center;">
-            As a fresher, I want to put to use my creative skills, technologies that I am familiar with,
-            innovative thoughts that will benefit the Organization in the long run and also help me in
-            building my professional career
+        <h4 id= "objective" style="color: #C8C8C8; text-align: center;">
         </h4>
 
         <div>
@@ -52,7 +49,7 @@
             </div>
             
             <div style="display: flex;">
-                <span style="color:gray;">2014-2018</span>
+                <span id= "duration" style="color:gray;"></span>
                 <table style="padding-left: 10%;">
                     <tr>
                         <th>Bachelor of Science in Computer Science & Engineering,</th>
@@ -295,7 +292,10 @@
             
     </div>
 
- 
+     
+    <script type="text/javascript" src="staticData.json"></script>
+    <script type="text/javascript" src="index.js"></script>
+    
 
 </body>
 </html>

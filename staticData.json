@@ -1,0 +1,47 @@
+staticData = {
+    "user":[
+        {
+            "id": "0",
+            "email": "mredulhasan93@gmail.com",
+            "password": "mredul38"
+        }
+    ],
+
+    "userDetail":[
+        {
+            "email": "mredulhasan93@gmail.com",
+            "name": "MREDUL HASAN",
+            "imageURL": "file:///D:/portfolio_builder/demo.jpg",
+            "linkedIn": "mredul-hasan-1581b0115",
+            "linkedInID": "https://www.linkedin.com/in/mredul-hasan-1581b0115/",
+            "github": "Mredul-Hasan",
+            "githubID": "https://github.com/Mredul-Hasan",
+            "mobile": "+8801929-326055",
+            "address": "Mizan Park, Modakpara, Karimganj,Kishoreganj-2300.",
+            
+            "objective": "As a fresher, I want to put to use my creative skills, technologies that I am familiar with, innovative thoughts that will benefit the Organization in the long run and also help me in building my professional career",
+           
+            "current_designation": {
+                "designation": "Bachelor of Science",
+                "institution": "Computer Science & Engineering Discipline",
+                "versity_address": "Khulna University, Khunla-9208."
+            },
+
+            "education": [
+                {
+                    "degree": "Bachelor of Science in Computer Science & Engineering,",
+                    "degree_details":{
+                        "degree": "Bachelor of Science in Computer Science & Engineering,",
+                        "dept": "Computer Science & Engineering discipline,",
+                        "institution": "Khulna University, Khulna,",
+                        "result": "CGPA 3.10 out of 4.00",
+                        "duration": "2014-2018"
+                    }
+                },
+                {},
+                {}
+            ]
+        }
+
+    ]
+}

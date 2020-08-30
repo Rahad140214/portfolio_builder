@@ -36,6 +36,11 @@
   text-decoration: none;
 }
 
+.test {
+  color : 'blue';
+  font-size: large;
+  background: green;
+}
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
