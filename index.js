@@ -104,3 +104,33 @@ document.getElementById('teacherName2').innerHTML = staticData.userDetail[0].ref
 document.getElementById('teacherDesignation2').innerHTML = staticData.userDetail[0].references[1].teacherDesignation;
 document.getElementById('teacherInstitute2').innerHTML = staticData.userDetail[0].references[1].teacherInstitute;
 document.getElementById('teacherEmail2').innerHTML = staticData.userDetail[0].references[1].teacherEmail;
+
+
+var loginBtn = document.getElementById("loginBtn");
+var modal = document.getElementById("loginModal");
+
+// When the user clicks the button, open the modal 
+loginBtn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var loginCloseBtn = document.getElementsByClassName("loginModalClose")[0];
+
+// When the user clicks the button, open the modal 
+loginCloseBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+//Reading logInput field values
+function handleCredentialSubmit(){
+    var logInUsername = document.getElementById("logInUsername").value;
+    var password = document.getElementById("password").value;
+} 

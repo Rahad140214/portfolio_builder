@@ -6,7 +6,7 @@
 
     <div style="padding-left: 15%; padding-right: 15%;">
         <div class="topnav">
-            <a class="active" href="#home">Login</a>
+            <a class="active" id="loginBtn" data-toggle="modal" data-target="loginModal">Login</a>
             <a href="#news">Register</a>
         </div>
 
@@ -29,10 +29,8 @@
                 <div><a id= "githubID" href=""> </a><i style="padding: 0px 10px;" class="fa fa-github"></i></div>
                 <div><span id= "mobile" ></span><i style="padding: 0px 10px;" class="fa fa-phone" aria-hidden="true"></i></div>
                 <div>
-                    <span id= "address">
-                    </span>
-
-                     <i style="padding: 0px 10px;" class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span id= "address"></span>
+                    <i style="padding: 0px 10px;" class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 
 
@@ -282,6 +280,27 @@
         
         </div>
             
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="loginModalClose">&times;</span>
+            <h2>Log In</h2>
+          </div>
+  
+          <form>
+            <div class="container"> 
+                <label><b>Username</b></label> 
+                <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
+  
+              <label><b>Password</b></label>
+              <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
+  
+              <button type="submit" onclick="handleCredentialSubmit()">Login</button> 
+            </div>  
+          </form>
+        </div>
     </div>
 
      
