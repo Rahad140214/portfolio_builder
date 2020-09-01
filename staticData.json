@@ -1,10 +1,21 @@
 staticData = {
     "user":[
         {
-            "id": "0",
+            "id": 0,
             "email": "mredulhasan93@gmail.com",
             "password": "mredul38"
+        },
+        {
+            "id": 1,
+            "email": "rahadmannan@gmail.com",
+            "password": "rahad14"
+        },
+        {
+            "id": 2,
+            "email": "avijit1254@gmail.com",
+            "password": "rahad14"
         }
+
     ],
 
     "userDetail":[
@@ -62,7 +73,6 @@ staticData = {
                 "web": ["PHP", "Javascript", "HTML", "CSS"],
                 "familiarWith": [ "MATLAB" , "Basic Photoshop, Microsoft Office", "Prolog"],
                 "tools": ["Trello", "LaTex", "Microsoft Visual Studio", "GNU-GCC", "Andriod Studio", "Sublime Text", "MySQL", "Eclipse", "FileZilla"]
-
             },
 
             "projectExperience": [
@@ -146,7 +156,149 @@ staticData = {
                 }
                 
             ],
+        },
+        {
+            "email": "rahadmannan@gmail.com",
+            "name": "Sk Rahad Mannan",
+            "imageURL": "file:///D:/portfolio_builder/rahad_pic.jpg",
+            "linkedIn": "rahad-mannan-140214",
+            "linkedInID": "https://www.linkedin.com/in/mredul-hasan-1581b0115/",
+            "github": "Rahad-Mannan",
+            "githubID": "https://github.com/Mredul-Hasan",
+            "mobile": "+880187030030",
+            "address": "House#08, Road#98, Choto Mirzapur Lane, Khulna.",
+            
+            "objective": "To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.",
+           
+            "current_designation": {
+                "designation": "Bachelor of Science",
+                "institution": "Computer Science & Engineering Discipline",
+                "currentDesignationAddress": "Khulna University, Khunla-9208."
+            },
+
+            "education": [
+                {
+                    "degree_details":{
+                        "degree": "Bachelor of Science in Computer Science & Engineering,",
+                        "department": "Computer Science & Engineering discipline,",
+                        "institution": "Khulna University, Khulna,",
+                        "result": "CGPA 3.50 out of 4.00",
+                        "duration": "2014-2018"
+                    }
+                },
+                {
+                    "degree_details":{
+                        "degree": "Higher Secondary Certificate,",
+                        "department": "Science Group,",
+                        "institution": "Govt. Sundarban Adarsha College, Khulna.",
+                        "result": "GPA 4.80 out of 5.00.",
+                        "duration": "2010-2012"
+                    }
+                },
+                {
+                    "degree_details":{
+                        "degree": "School Secondary Certificate,",
+                        "department": "Science Group,",
+                        "institution": "Saint Joseph's High School, Khulna.",
+                        "result": "GPA 5.00 out of 5.00.",
+                        "duration": "Passing Year,<br>2010"
+                    }
+                }
+            ],
+
+            "technicalSkills": {
+                "language": ["C", "C++","C#", "Java", "Android (GDG Certified)", "80x86 Assembly"],
+                "web": ["PHP", "Javascript", "HTML", "CSS"],
+                "familiarWith": [ "MATLAB" , "Basic Photoshop, Microsoft Office", "Prolog"],
+                "tools": ["Trello", "LaTex", "Microsoft Visual Studio", "GNU-GCC", "Andriod Studio", "Sublime Text", "MySQL", "Eclipse", "FileZilla"]
+
+            },
+
+            "projectExperience": [
+                {
+                    "projectName": "CSEKU Teacher <br>Profile",
+                    "projectDescription": "Specially designed for CSEKU official website. Worked in PHP, Laravel(basic part) & familiar with bootstrapping, Trello, basic photoshop",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Bulk SMS <br>Platform",
+                    "projectDescription": "Worked in PHP, Ajax, JQuary, JavaScript, MySql database.",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Coaching Center <br>Management <br>System",
+                    "projectDescription": "Designed for a local Coaching center as their official website. Worked in PHP, JQuary, JavaScript, MySql database",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Offline Quizzing <br>App",
+                    "projectDescription": "Categorical offline desktop app smeared with interesting scoring method. Worked in C# and Access database. ",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                },
+                {
+                    "projectName": "Online Movie <br>Database",
+                    "projectDescription": " A bangla movie database like IMDB with simple functionality providing basic info of a movie. Worked in PHP, JQuary, MySql database.",
+                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                }
+                
+            ],
+
+            "researchProject": [
+                {
+                    "thesisType": "B.Sc Thesis<br> (under review)",
+                    "publisehedIn": "submitted to Applied Soft Computing journal Elsevier",
+                    "researchTopic": "Multiobjective Phylogenetic Tree Construction Usin CRO",
+                    "researchDesc": "  Creating phylogentic Tree using DNA Sequences."
+                }
+            ],
+
+            "activities": [
+                {
+                    "listOfActivities1": "Always participated in College & University Level co-curricular activities.",
+                    "listOfActivities2": "Served as Class Representative (CR) several times.",
+                    "listOfActivities3": "Worked as potential coordinator for arranging central KUCSE Tour-2k17.",
+                    "listOfActivities4": "Secured 3rd position in IT Quiz contest at CSE Fest-2015.",
+                    "listOfActivities5": "Participated various local Project Exhibition, Programming Contest etc.",
+                   
+                }
+            ],
+
+            "projectReference": [
+                {
+                    "projectStorage": "Live Project",
+                    "projectTitle": "CSE KU Website",
+                    "projectUrl": "http://beta.cseku.ac.bd/cseKuWebsite/public/faculty"
+                },
+                {
+                    "projectStorage": "Bit Bucket",
+                    "projectTitle": "Silly_Order",
+                    "projectUrl": "https://bitbucket.org/silly_coder/"
+                },
+                {
+                    "projectStorage": "Coaching Center Management System",
+                    "projectTitle": "Silly_Mredul",
+                    "projectUrl": "https://github.com/sillyMredul"
+                }
+                
+            ],
+            "references": [
+                {
+                    "teacherName": "Dr. Kamrul Hasan Talukder ",
+                    "teacherDesignation": "Professor",
+                    "teacherInstitute": "Khulna University ",
+                    "teacherEmail": "khtalukdar@gmail.com",
+                },
+                {
+                    "teacherName": "Dr. Kazi Masudul Alam",
+                    "teacherDesignation": "Associate Professor",
+                    "teacherInstitute": "Khulna University ",
+                    "teacherEmail": "kazi@cseku.ac.bd",
+                }
+                
+            ],
         }
 
     ]
+
+    
 }

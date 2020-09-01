@@ -4,6 +4,28 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="loginModalClose">&times;</span>
+            <h2>Log In</h2>
+          </div>
+  
+          <form>
+            <div class="container"> 
+                <label><b>Username</b></label> 
+                <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
+  
+              <label><b>Password</b></label>
+              <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
+  
+              <button type="submit" onclick="handleCredentialSubmit()">Login</button> 
+            </div>  
+          </form>
+        </div>
+    </div>
+
+
     <div style="padding-left: 15%; padding-right: 15%;">
         <div class="topnav">
             <a class="active" id="loginBtn" data-toggle="modal" data-target="loginModal">Login</a>
@@ -24,7 +46,7 @@
             </div>
             
             <div style="right: 16%; position: absolute; text-align: right;">
-                <div><a id= "email" href="">mredulhasan93@gmail.com</a><i style="padding: 0px 10px;" class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div><a id= "email" href=""></a><i style="padding: 0px 10px;" class="fa fa-envelope" aria-hidden="true"></i></div>
                 <div><a id= "linkedInID" href= ""> </a><i style="padding: 0px 10px;" class="fa fa-linkedin" aria-hidden="true"></i></div>
                 <div><a id= "githubID" href=""> </a><i style="padding: 0px 10px;" class="fa fa-github"></i></div>
                 <div><span id= "mobile" ></span><i style="padding: 0px 10px;" class="fa fa-phone" aria-hidden="true"></i></div>
@@ -280,27 +302,6 @@
         
         </div>
             
-    </div>
-
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="loginModalClose">&times;</span>
-            <h2>Log In</h2>
-          </div>
-  
-          <form>
-            <div class="container"> 
-                <label><b>Username</b></label> 
-                <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
-  
-              <label><b>Password</b></label>
-              <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
-  
-              <button type="submit" onclick="handleCredentialSubmit()">Login</button> 
-            </div>  
-          </form>
-        </div>
     </div>
 
      
