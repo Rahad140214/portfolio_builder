@@ -6,30 +6,28 @@
 
     <div id="loginModal" class="modal">
         <div class="modal-content">
-          <div class="modal-header">
-            <span class="loginModalClose">&times;</span>
-            <h2>Log In</h2>
-          </div>
+            <div class="modal-header">
+                <span class="loginModalClose">&times;</span>
+                <h2>Log In</h2>
+            </div>
   
-          <form>
             <div class="container"> 
                 <label><b>Username</b></label> 
                 <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
-  
-              <label><b>Password</b></label>
-              <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
-  
-              <button type="submit" onclick="handleCredentialSubmit()">Login</button> 
+
+                <label><b>Password</b></label>
+                <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
+
+                <button onclick="handleCredentialSubmit(event)">Login</button> 
             </div>  
-          </form>
         </div>
     </div>
 
 
     <div style="padding-left: 15%; padding-right: 15%;">
         <div class="topnav">
-            <a class="active" id="loginBtn" data-toggle="modal" data-target="loginModal">Login</a>
-            <a href="#news">Register</a>
+            <a href="#login" class="active" id="loginBtn" data-toggle="modal">Login</a>
+            <a href="#register">Register</a>
         </div>
 
         <div class="header-div">
