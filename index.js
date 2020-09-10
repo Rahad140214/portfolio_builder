@@ -73,31 +73,132 @@ function userInformation(n){
     document.getElementById('tools').innerHTML = staticData.userDetail[n].technicalSkills.tools;
 
     //Project Experience
-    document.getElementById('projectName').innerHTML = staticData.userDetail[n].projectExperience[0].projectName;
-    document.getElementById('projectDescription').innerHTML = staticData.userDetail[n].projectExperience[0].projectDescription;
-    document.getElementById('projectUrl').href = staticData.userDetail[n].projectExperience[0].projectUrl;
+    // document.getElementById('projectName').innerHTML = staticData.userDetail[n].projectExperience[0].projectName;
+    // document.getElementById('projectDescription').innerHTML = staticData.userDetail[n].projectExperience[0].projectDescription;
+    // document.getElementById('projectUrl').href = staticData.userDetail[n].projectExperience[0].projectUrl;
 
-    document.getElementById('projectName1').innerHTML = staticData.userDetail[n].projectExperience[1].projectName;
-    document.getElementById('projectDescription1').innerHTML = staticData.userDetail[n].projectExperience[1].projectDescription;
-    document.getElementById('projectUrl1').href = staticData.userDetail[n].projectExperience[1].projectUrl;
+    // document.getElementById('projectName1').innerHTML = staticData.userDetail[n].projectExperience[1].projectName;
+    // document.getElementById('projectDescription1').innerHTML = staticData.userDetail[n].projectExperience[1].projectDescription;
+    // document.getElementById('projectUrl1').href = staticData.userDetail[n].projectExperience[1].projectUrl;
 
-    document.getElementById('projectName2').innerHTML = staticData.userDetail[n].projectExperience[2].projectName;
-    document.getElementById('projectDescription2').innerHTML = staticData.userDetail[n].projectExperience[2].projectDescription;
-    document.getElementById('projectUrl2').href = staticData.userDetail[n].projectExperience[2].projectUrl;
+    // document.getElementById('projectName2').innerHTML = staticData.userDetail[n].projectExperience[2].projectName;
+    // document.getElementById('projectDescription2').innerHTML = staticData.userDetail[n].projectExperience[2].projectDescription;
+    // document.getElementById('projectUrl2').href = staticData.userDetail[n].projectExperience[2].projectUrl;
 
-    document.getElementById('projectName3').innerHTML = staticData.userDetail[n].projectExperience[3].projectName;
-    document.getElementById('projectDescription3').innerHTML = staticData.userDetail[n].projectExperience[3].projectDescription;
-    document.getElementById('projectUrl3').href = staticData.userDetail[n].projectExperience[3].projectUrl;
+    // document.getElementById('projectName3').innerHTML = staticData.userDetail[n].projectExperience[3].projectName;
+    // document.getElementById('projectDescription3').innerHTML = staticData.userDetail[n].projectExperience[3].projectDescription;
+    // document.getElementById('projectUrl3').href = staticData.userDetail[n].projectExperience[3].projectUrl;
 
-    document.getElementById('projectName4').innerHTML = staticData.userDetail[n].projectExperience[4].projectName;
-    document.getElementById('projectDescription4').innerHTML = staticData.userDetail[n].projectExperience[4].projectDescription;
-    document.getElementById('projectUrl4').href = staticData.userDetail[n].projectExperience[4].projectUrl;
+    // document.getElementById('projectName4').innerHTML = staticData.userDetail[n].projectExperience[4].projectName;
+    // document.getElementById('projectDescription4').innerHTML = staticData.userDetail[n].projectExperience[4].projectDescription;
+    // document.getElementById('projectUrl4').href = staticData.userDetail[n].projectExperience[4].projectUrl;
 
+    var projectTbl = document.getElementById("projectTbl");
+
+    for(let row=0; row < staticData.userDetail[n].projectExperience.length; row++){
+        let icon='';
+        var tr = document.createElement('TR');
+        
+        var td = document.createElement('TD');
+        td.width = '17%'; 
+        td.color = 'gray';
+        td.style.paddingRight= '40px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].projectExperience[row].projectName));
+        tr.appendChild(td);
+
+        var td = document.createElement('TD');
+        td.appendChild(document.createTextNode(staticData.userDetail[n].projectExperience[row].projectDescription));
+        tr.appendChild(td);
+        
+        var td = document.createElement('TD');
+        var aTag = document.createElement('a');
+        aTag.setAttribute('href',staticData.userDetail[n].projectExperience[row].projectUrl);
+        let domainName = staticData.userDetail[n].projectExperience[row].projectUrl.substring(
+            staticData.userDetail[n].projectExperience[row].projectUrl.indexOf("/") + 2,
+            staticData.userDetail[n].projectExperience[row].projectUrl.indexOf(".")
+        );
+        
+        if(domainName== "bitbucket"){
+            icon = domainName;
+        }
+        else if(domainName== "github"){
+            icon = domainName;
+        }
+        else{
+            icon = "world";        
+        }
+        aTag.innerHTML = `<i class="fa fa-${icon} fa-2x" style="color:#1206b6a8; font-size:22px; padding-right:2px;"></i>`;
+        td.appendChild(aTag);
+        tr.appendChild(td);
+
+        projectTbl.appendChild(tr);
+    }
+    
     //Research project
-    document.getElementById('thesisType').innerHTML = staticData.userDetail[n].researchProject[0].thesisType;
-    document.getElementById('publisehedIn').innerHTML = staticData.userDetail[n].researchProject[0].publisehedIn;
-    document.getElementById('researchTopic').innerHTML = staticData.userDetail[n].researchProject[0].researchTopic;
-    document.getElementById('researchDesc').innerHTML = staticData.userDetail[n].researchProject[0].researchDesc;
+    // document.getElementById('thesisType').innerHTML = staticData.userDetail[n].researchProject[0].thesisType;
+    // document.getElementById('publisehedIn').innerHTML = staticData.userDetail[n].researchProject[0].publisehedIn;
+    // document.getElementById('researchTopic').innerHTML = staticData.userDetail[n].researchProject[0].researchTopic;
+    // document.getElementById('researchDesc').innerHTML = staticData.userDetail[n].researchProject[0].researchDesc;
+
+    var researchProjectTbl = document.getElementById("researchProject");
+
+    for(let row=0; row < staticData.userDetail[n].researchProject.length; row++){
+        var tr = document.createElement('TR');
+        
+        var td = document.createElement('TD');
+        td.width = '17%'; 
+        td.style.color = 'gray';
+        td.style.paddingRight= '50px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].researchProject[row].thesisType));
+        tr.appendChild(td);
+
+        var td = document.createElement('TD');
+        var b = document.createElement('B');
+        var span = document.createElement('SPAN');
+        var br = document.createElement('BR');
+        var div = document.createElement('DIV');
+        b.appendChild(document.createTextNode(staticData.userDetail[n].researchProject[row].researchTopic));
+        td.appendChild(b);
+        td.appendChild(br);
+        span.appendChild(document.createTextNode(staticData.userDetail[n].researchProject[row].publisehedIn));
+        span.style.color = 'gray';
+        td.appendChild(span);
+        div.appendChild(document.createTextNode(staticData.userDetail[n].researchProject[row].researchDesc));
+        td.appendChild(div);
+        tr.appendChild(td);
+        researchProjectTbl.appendChild(tr);
+    }
+
+
+
+
+    
+    var projectTbl = document.getElementById("projectRefTbl");
+
+    for(let row=0; row < staticData.userDetail[n].projectReference.length; row++){
+        var tr = document.createElement('TR');
+        
+        var td = document.createElement('TD');
+        td.width = '17%'; 
+        td.style.color = 'gray';
+        td.style.paddingRight= '40px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].projectReference[row].projectStorage));
+        tr.appendChild(td);
+
+        var td = document.createElement('TD');
+        td.style.paddingRight= '30px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].projectReference[row].projectTitle));
+        tr.appendChild(td);
+        
+        var td = document.createElement('TD');
+        var aTag = document.createElement('a');
+        aTag.setAttribute('href',staticData.userDetail[n].projectReference[row].projectUrl);
+        aTag.innerHTML = '<i class="fa fa-bitbucket fa-2x" style="color:#1206b6a8; font-size:22px; padding-right:2px;"></i>';
+        td.appendChild(aTag);
+        tr.appendChild(td);
+
+        projectTbl.appendChild(tr);
+    }
 
     //Activites
     document.getElementById('listOfActivities1').innerHTML = staticData.userDetail[n].activities[0].listOfActivities1;
@@ -105,19 +206,6 @@ function userInformation(n){
     document.getElementById('listOfActivities3').innerHTML = staticData.userDetail[n].activities[0].listOfActivities3;
     document.getElementById('listOfActivities4').innerHTML = staticData.userDetail[n].activities[0].listOfActivities4;
     document.getElementById('listOfActivities5').innerHTML = staticData.userDetail[n].activities[0].listOfActivities5;
-
-    //Project References
-    document.getElementById('referenceStorage1').innerHTML = staticData.userDetail[n].projectReference[0].projectStorage;
-    document.getElementById('referenceTitle1').innerHTML = staticData.userDetail[n].projectReference[0].projectTitle;
-    document.getElementById('referenceUrl1').href = staticData.userDetail[n].projectReference[0].projectUrl;
-
-    document.getElementById('referenceStorage2').innerHTML = staticData.userDetail[n].projectReference[1].projectStorage;
-    document.getElementById('referenceTitle2').innerHTML = staticData.userDetail[n].projectReference[1].projectTitle;
-    document.getElementById('referenceUrl2').href = staticData.userDetail[n].projectReference[1].projectUrl;
-
-    document.getElementById('referenceStorage3').innerHTML = staticData.userDetail[n].projectReference[2].projectStorage;
-    document.getElementById('referenceTitle3').innerHTML = staticData.userDetail[n].projectReference[2].projectTitle;
-    document.getElementById('referenceUrl3').href = staticData.userDetail[n].projectReference[2].projectUrl;
 
     //References
     document.getElementById('teacherName1').innerHTML = staticData.userDetail[n].references[0].teacherName;
@@ -138,14 +226,15 @@ function handleCredentialSubmit(e){
     var logInUsername = document.getElementById("logInUsername").value;
     var password = document.getElementById("password").value;
     staticData.user.forEach((value, index) => {
-        if(value.email === logInUsername && value.password === password){
+        if(value.email === logInUsername){
+            if(value.password === password){
                 modal.style.display = "none";
                 userInformation(value.id);
                 return;
-        }
-        
-        else{
-            console.log("Wrong password! Try again later.");
+            }
+            else{
+                console.log("Wrong password! Try again later.");
+            }
         }
     });
 }

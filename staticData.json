@@ -77,27 +77,27 @@ staticData = {
 
             "projectExperience": [
                 {
-                    "projectName": "CSEKU Teacher <br>Profile",
+                    "projectName": "CSEKU Teacher Profile",
                     "projectDescription": "Specially designed for CSEKU official website. Worked in PHP, Laravel(basic part) & familiar with bootstrapping, Trello, basic photoshop",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 },
                 {
-                    "projectName": "Bulk SMS <br>Platform",
+                    "projectName": "Bulk SMS Platform",
                     "projectDescription": "Worked in PHP, Ajax, JQuary, JavaScript, MySql database.",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 },
                 {
-                    "projectName": "Coaching Center <br>Management <br>System",
+                    "projectName": "Coaching Center Management System",
                     "projectDescription": "Designed for a local Coaching center as their official website. Worked in PHP, JQuary, JavaScript, MySql database",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 },
                 {
-                    "projectName": "Offline Quizzing <br>App",
+                    "projectName": "Offline Quizzing App",
                     "projectDescription": "Categorical offline desktop app smeared with interesting scoring method. Worked in C# and Access database. ",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 },
                 {
-                    "projectName": "Online Movie <br>Database",
+                    "projectName": "Online Movie Database",
                     "projectDescription": " A bangla movie database like IMDB with simple functionality providing basic info of a movie. Worked in PHP, JQuary, MySql database.",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 }
@@ -216,27 +216,27 @@ staticData = {
 
             "projectExperience": [
                 {
-                    "projectName": "CSEKU Teacher <br>Profile",
+                    "projectName": "CSEKU Teacher Profile",
                     "projectDescription": "Specially designed for CSEKU official website. Worked in PHP, Laravel(basic part) & familiar with bootstrapping, Trello, basic photoshop",
-                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                    "projectUrl": "https://github.com/sillyMredul"
                 },
                 {
-                    "projectName": "Bulk SMS <br>Platform",
+                    "projectName": "Bulk SMS Platform",
                     "projectDescription": "Worked in PHP, Ajax, JQuary, JavaScript, MySql database.",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 },
                 {
-                    "projectName": "Coaching Center <br>Management <br>System",
+                    "projectName": "Coaching Center Management System",
                     "projectDescription": "Designed for a local Coaching center as their official website. Worked in PHP, JQuary, JavaScript, MySql database",
-                    "projectUrl": "https://bitbucket.org/account/legacy-signin/"
+                    "projectUrl": "https://github.com/account/legacy-signin/"
                 },
                 {
-                    "projectName": "Offline Quizzing <br>App",
+                    "projectName": "Offline Quizzing App",
                     "projectDescription": "Categorical offline desktop app smeared with interesting scoring method. Worked in C# and Access database. ",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 },
                 {
-                    "projectName": "Online Movie <br>Database",
+                    "projectName": "Online Movie Database",
                     "projectDescription": " A bangla movie database like IMDB with simple functionality providing basic info of a movie. Worked in PHP, JQuary, MySql database.",
                     "projectUrl": "https://bitbucket.org/account/legacy-signin/"
                 }
@@ -245,7 +245,7 @@ staticData = {
 
             "researchProject": [
                 {
-                    "thesisType": "B.Sc Thesis<br> (under review)",
+                    "thesisType": "B.Sc Thesis (under review)",
                     "publisehedIn": "submitted to Applied Soft Computing journal Elsevier",
                     "researchTopic": "Multiobjective Phylogenetic Tree Construction Usin CRO",
                     "researchDesc": "  Creating phylogentic Tree using DNA Sequences."
