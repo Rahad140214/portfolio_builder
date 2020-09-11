@@ -45,25 +45,61 @@ function userInformation(n){
 
     //Education  section JavaScript
     //B.Sc
-    document.getElementById('duration').innerHTML = staticData.userDetail[n].education[0].degree_details.duration;
-    document.getElementById('degree').innerHTML = staticData.userDetail[n].education[0].degree_details.degree;
-    document.getElementById('department').innerHTML = staticData.userDetail[n].education[0].degree_details.department;
-    document.getElementById('institution').innerHTML = staticData.userDetail[n].education[0].degree_details.institution;
-    document.getElementById('result').innerHTML = staticData.userDetail[n].education[0].degree_details.result;
+    // document.getElementById('duration').innerHTML = staticData.userDetail[n].education[0].degree_details.duration;
+    // document.getElementById('degree').innerHTML = staticData.userDetail[n].education[0].degree_details.degree;
+    // document.getElementById('department').innerHTML = staticData.userDetail[n].education[0].degree_details.department;
+    // document.getElementById('institution').innerHTML = staticData.userDetail[n].education[0].degree_details.institution;
+    // document.getElementById('result').innerHTML = staticData.userDetail[n].education[0].degree_details.result;
 
-    //HSC
-    document.getElementById('hscDuration').innerHTML = staticData.userDetail[n].education[1].degree_details.duration;
-    document.getElementById('hscDegree').innerHTML = staticData.userDetail[n].education[1].degree_details.degree;
-    document.getElementById('hscDepartment').innerHTML = staticData.userDetail[n].education[1].degree_details.department;
-    document.getElementById('hscInstitution').innerHTML = staticData.userDetail[n].education[1].degree_details.institution;
-    document.getElementById('hscResult').innerHTML = staticData.userDetail[n].education[1].degree_details.result;
+    // //HSC
+    // document.getElementById('hscDuration').innerHTML = staticData.userDetail[n].education[1].degree_details.duration;
+    // document.getElementById('hscDegree').innerHTML = staticData.userDetail[n].education[1].degree_details.degree;
+    // document.getElementById('hscDepartment').innerHTML = staticData.userDetail[n].education[1].degree_details.department;
+    // document.getElementById('hscInstitution').innerHTML = staticData.userDetail[n].education[1].degree_details.institution;
+    // document.getElementById('hscResult').innerHTML = staticData.userDetail[n].education[1].degree_details.result;
 
-    //SSC
-    document.getElementById('sscDuration').innerHTML = staticData.userDetail[n].education[2].degree_details.duration;
-    document.getElementById('sscDegree').innerHTML = staticData.userDetail[n].education[2].degree_details.degree;
-    document.getElementById('sscDepartment').innerHTML = staticData.userDetail[n].education[2].degree_details.department;
-    document.getElementById('sscInstitution').innerHTML = staticData.userDetail[n].education[2].degree_details.institution;
-    document.getElementById('sscResult').innerHTML = staticData.userDetail[n].education[2].degree_details.result;
+    // //SSC
+    // document.getElementById('sscDuration').innerHTML = staticData.userDetail[n].education[2].degree_details.duration;
+    // document.getElementById('sscDegree').innerHTML = staticData.userDetail[n].education[2].degree_details.degree;
+    // document.getElementById('sscDepartment').innerHTML = staticData.userDetail[n].education[2].degree_details.department;
+    // document.getElementById('sscInstitution').innerHTML = staticData.userDetail[n].education[2].degree_details.institution;
+    // document.getElementById('sscResult').innerHTML = staticData.userDetail[n].education[2].degree_details.result;
+    
+    var educationTable = document.getElementById("educationTable");
+
+    for(let row=0; row < staticData.userDetail[n].education.length; row++){
+        var tr = document.createElement('TR');
+        
+        var td = document.createElement('TD');
+        td.appendChild(document.createTextNode(staticData.userDetail[n].education[row].duration));
+        td.style.color = 'gray';
+        td.style.paddingBottom= '64px';
+        td.style.paddingRight = '54px';
+        td.width = '24%';
+        tr.appendChild(td);
+
+        var b = document.createElement('B');
+        var span = document.createElement('SPAN');
+        var br = document.createElement('BR');
+        var div = document.createElement('DIV');
+        var div1= document.createElement('DIV');
+        var  td = document.createElement('TD');
+        b.appendChild(document.createTextNode(staticData.userDetail[n].education[row].degree));
+        td.appendChild(b);
+        td.appendChild(br);
+        span.appendChild(document.createTextNode(staticData.userDetail[n].education[row].department));
+        span.style.color = 'gray';
+        td.appendChild(span);
+        div.appendChild(document.createTextNode(staticData.userDetail[n].education[row].institution));
+        td.appendChild(div);
+        div1.appendChild(document.createTextNode(staticData.userDetail[n].education[row].result));
+        td.appendChild(div1);
+        td.style.paddingLeft = '4.5%';
+        td.style.paddingBottom = '16px';
+        tr.appendChild(td);
+        educationTable.appendChild(tr);
+    }
+
 
 
     //Technical Skills & Endorsement section Javascript
@@ -170,9 +206,6 @@ function userInformation(n){
     }
 
 
-
-
-    
     var projectTbl = document.getElementById("projectRefTbl");
 
     for(let row=0; row < staticData.userDetail[n].projectReference.length; row++){
@@ -201,23 +234,65 @@ function userInformation(n){
     }
 
     //Activites
-    document.getElementById('listOfActivities1').innerHTML = staticData.userDetail[n].activities[0].listOfActivities1;
-    document.getElementById('listOfActivities2').innerHTML = staticData.userDetail[n].activities[0].listOfActivities2;
-    document.getElementById('listOfActivities3').innerHTML = staticData.userDetail[n].activities[0].listOfActivities3;
-    document.getElementById('listOfActivities4').innerHTML = staticData.userDetail[n].activities[0].listOfActivities4;
-    document.getElementById('listOfActivities5').innerHTML = staticData.userDetail[n].activities[0].listOfActivities5;
+    
+    var uList = document.getElementById("uList");
+    for(let row=0; row < staticData.userDetail[n].activities.length; row++){
+        var li = document.createElement('LI');
+        li.appendChild(document.createTextNode(staticData.userDetail[n].activities[row]));
+        uList.appendChild(li);
+    }
+
 
     //References
-    document.getElementById('teacherName1').innerHTML = staticData.userDetail[n].references[0].teacherName;
-    document.getElementById('teacherDesignation1').innerHTML = staticData.userDetail[n].references[0].teacherDesignation;
-    document.getElementById('teacherInstitute1').innerHTML = staticData.userDetail[n].references[0].teacherInstitute;
-    document.getElementById('teacherEmail1').innerHTML = staticData.userDetail[n].references[0].teacherEmail;
+    // document.getElementById('teacherName1').innerHTML = staticData.userDetail[n].references[0].teacherName;
+    // document.getElementById('teacherDesignation1').innerHTML = staticData.userDetail[n].references[0].teacherDesignation;
+    // document.getElementById('teacherInstitute1').innerHTML = staticData.userDetail[n].references[0].teacherInstitute;
+    // document.getElementById('teacherEmail1').innerHTML = staticData.userDetail[n].references[0].teacherEmail;
 
-    document.getElementById('teacherName2').innerHTML = staticData.userDetail[n].references[1].teacherName;
-    document.getElementById('teacherDesignation2').innerHTML = staticData.userDetail[n].references[1].teacherDesignation;
-    document.getElementById('teacherInstitute2').innerHTML = staticData.userDetail[n].references[1].teacherInstitute;
-    document.getElementById('teacherEmail2').innerHTML = staticData.userDetail[n].references[1].teacherEmail;
+    // document.getElementById('teacherName2').innerHTML = staticData.userDetail[n].references[1].teacherName;
+    // document.getElementById('teacherDesignation2').innerHTML = staticData.userDetail[n].references[1].teacherDesignation;
+    // document.getElementById('teacherInstitute2').innerHTML = staticData.userDetail[n].references[1].teacherInstitute;
+    // document.getElementById('teacherEmail2').innerHTML = staticData.userDetail[n].references[1].teacherEmail;
     
+    var teachRef = document.getElementById("teachRef");
+
+    for(let row=0; row < staticData.userDetail[n].references.length; row++){
+        var tr = document.createElement('TR');
+        
+        var td = document.createElement('TD');
+        td.style.border = '1px solid'; 
+        td.style.color = 'gray';
+        td.style.textAlign = 'left';
+        td.style.padding= '8px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherName));
+        tr.appendChild(td);
+
+        var td = document.createElement('TD');
+        td.style.border = '1px solid'; 
+        td.style.color = 'gray';
+        td.style.textAlign = 'left';
+        td.style.padding= '8px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherDesignation));
+        tr.appendChild(td);
+        
+        var td = document.createElement('TD');
+        td.style.border = '1px solid'; 
+        td.style.color = 'gray';
+        td.style.textAlign = 'left';
+        td.style.padding= '8px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherInstitute));
+        tr.appendChild(td);
+
+        var td = document.createElement('TD');
+        td.style.border = '1px solid'; 
+        td.style.color = 'gray';
+        td.style.textAlign = 'left';
+        td.style.padding= '8px';
+        td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherEmail));
+        tr.appendChild(td);
+
+    }
+
 }
 
 //Reading logInput field values

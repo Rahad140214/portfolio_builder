@@ -178,31 +178,25 @@ staticData = {
 
             "education": [
                 {
-                    "degree_details":{
-                        "degree": "Bachelor of Science in Computer Science & Engineering,",
-                        "department": "Computer Science & Engineering discipline,",
-                        "institution": "Khulna University, Khulna,",
-                        "result": "CGPA 3.50 out of 4.00",
-                        "duration": "2014-2018"
-                    }
+                    "degree": "Bachelor of Science in Computer Science & Engineering,",
+                    "department": "Computer Science & Engineering discipline,",
+                    "institution": "Khulna University, Khulna,",
+                    "result": "CGPA 3.50 out of 4.00",
+                    "duration": "2014-2018"
                 },
                 {
-                    "degree_details":{
-                        "degree": "Higher Secondary Certificate,",
-                        "department": "Science Group,",
-                        "institution": "Govt. Sundarban Adarsha College, Khulna.",
-                        "result": "GPA 4.80 out of 5.00.",
-                        "duration": "2010-2012"
-                    }
+                    "degree": "Higher Secondary Certificate,",
+                    "department": "Science Group,",
+                    "institution": "Govt. Sundarban Adarsha College, Khulna.",
+                    "result": "GPA 4.80 out of 5.00.",
+                    "duration": "2010-2012"
                 },
                 {
-                    "degree_details":{
-                        "degree": "School Secondary Certificate,",
-                        "department": "Science Group,",
-                        "institution": "Saint Joseph's High School, Khulna.",
-                        "result": "GPA 5.00 out of 5.00.",
-                        "duration": "Passing Year,<br>2010"
-                    }
+                    "degree": "School Secondary Certificate,",
+                    "department": "Science Group,",
+                    "institution": "Saint Joseph's High School, Khulna.",
+                    "result": "GPA 5.00 out of 5.00.",
+                    "duration": "Passing Year, 2010"
                 }
             ],
 
@@ -253,14 +247,11 @@ staticData = {
             ],
 
             "activities": [
-                {
-                    "listOfActivities1": "Always participated in College & University Level co-curricular activities.",
-                    "listOfActivities2": "Served as Class Representative (CR) several times.",
-                    "listOfActivities3": "Worked as potential coordinator for arranging central KUCSE Tour-2k17.",
-                    "listOfActivities4": "Secured 3rd position in IT Quiz contest at CSE Fest-2015.",
-                    "listOfActivities5": "Participated various local Project Exhibition, Programming Contest etc.",
-                   
-                }
+                "Always participated in College & University Level co-curricular activities.",
+                "Served as Class Representative (CR) several times.",
+                "Worked as potential coordinator for arranging central KUCSE Tour-2k17.",
+                "Secured 3rd position in IT Quiz contest at CSE Fest-2015.",
+                "Participated various local Project Exhibition, Programming Contest etc."
             ],
 
             "projectReference": [
