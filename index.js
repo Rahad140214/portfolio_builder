@@ -255,41 +255,38 @@ function userInformation(n){
     // document.getElementById('teacherEmail2').innerHTML = staticData.userDetail[n].references[1].teacherEmail;
     
     var teachRef = document.getElementById("teachRef");
-
+    var referenceTable = document.getElementById('referenceTable');
     for(let row=0; row < staticData.userDetail[n].references.length; row++){
         var tr = document.createElement('TR');
         
         var td = document.createElement('TD');
-        td.style.border = '1px solid'; 
-        td.style.color = 'gray';
+        td.style.border = '1px solid';
         td.style.textAlign = 'left';
         td.style.padding= '8px';
         td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherName));
         tr.appendChild(td);
 
         var td = document.createElement('TD');
-        td.style.border = '1px solid'; 
-        td.style.color = 'gray';
+        td.style.border = '1px solid';
         td.style.textAlign = 'left';
         td.style.padding= '8px';
         td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherDesignation));
         tr.appendChild(td);
         
         var td = document.createElement('TD');
-        td.style.border = '1px solid'; 
-        td.style.color = 'gray';
+        td.style.border = '1px solid';
         td.style.textAlign = 'left';
         td.style.padding= '8px';
         td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherInstitute));
         tr.appendChild(td);
 
         var td = document.createElement('TD');
-        td.style.border = '1px solid'; 
-        td.style.color = 'gray';
+        td.style.border = '1px solid';
         td.style.textAlign = 'left';
         td.style.padding= '8px';
         td.appendChild(document.createTextNode(staticData.userDetail[n].references[row].teacherEmail));
         tr.appendChild(td);
+        referenceTable.appendChild(tr);
 
     }
 
