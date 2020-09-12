@@ -1,6 +1,12 @@
 //Header Section JavaScript
+
+var isLoggedIn;
 var loginBtn = document.getElementById("loginBtn");
 var modal = document.getElementById("loginModal");
+
+//setting LogIn as initial dom element.
+document.getElementById("loginBtn").style.display = '';
+document.getElementById("logoutBtn").style.display = 'none';
 
 // When the user clicks the button, open the modal 
 loginBtn.onclick = function() {
@@ -300,13 +306,33 @@ function handleCredentialSubmit(e){
     staticData.user.forEach((value, index) => {
         if(value.email === logInUsername){
             if(value.password === password){
+                isLoggedIn= true;
+                authenticationChecking(isLoggedIn);
                 modal.style.display = "none";
                 userInformation(value.id);
                 return;
             }
             else{
+                isLoggedIn= false;
+                authenticationChecking(isLoggedIn);
                 console.log("Wrong password! Try again later.");
             }
         }
     });
+}
+
+function logoutUser(e){
+    e.preventDefault();
+    window.location.href = "index.html";
+}
+
+function authenticationChecking(isLoggedIn){
+if(isLoggedIn== true){
+    document.getElementById("loginBtn").style.display = 'none';
+    document.getElementById("logoutBtn").style.display = '';
+}
+else{
+    document.getElementById("loginBtn").style.display = '';
+    document.getElementById("logoutBtn").style.display = 'none';
+}
 }
