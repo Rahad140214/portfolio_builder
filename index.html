@@ -11,14 +11,16 @@
                 <h2>Log In</h2>
             </div>
   
-            <div class="container"> 
-                <label><b>Username</b></label> 
-                <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
+            <div class="container">
+                <form id="loginForm" onsubmit="handleCredentialSubmit(event)" >
+                    <label><b>Username</b></label> 
+                    <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
 
-                <label><b>Password</b></label>
-                <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
-
-                <button onclick="handleCredentialSubmit(event)">Login</button> 
+                    <label><b>Password</b></label>
+                    <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
+                    
+                    <button type="submit">Login</button>
+                </form> 
             </div>  
         </div>
     </div>
