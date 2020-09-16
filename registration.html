@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" type="text/css" href="userReg.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container" style="padding-left: 15%; padding-right: 8%;">
+    <div class="header-div" style= " width: 86.5%; padding-left: 8%;">
+        <div style="padding: 8px; display: flex">
+            <img id= "imageURL" src="" height="120" />
+            <div style="text-align: left; padding: 0px 10px;">
+                <h3 id="userName">Jhon Doe</h3>
+                <span style="font-size: smaller;color: gray;">
+                    <span id="currentDesignationTitle"></span> <br>
+                    <span id="institution"></span><br>
+                    <span id="currentDesignationAddress"></span>
+                </span>
+            </div>
+        </div>
+        
+        <div style="right: 19%; position: absolute; text-align: right;">
+            <div><a id= "email" href=""></a><i style="padding: 0px 10px;" class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div><a id= "linkedInID" href= ""> </a><i style="padding: 0px 10px;" class="fa fa-linkedin" aria-hidden="true"></i></div>
+            <div><a id= "githubID" href=""> </a><i style="padding: 0px 10px;" class="fa fa-github"></i></div>
+            <div><span id= "mobile" ></span><i style="padding: 0px 10px;" class="fa fa-phone" aria-hidden="true"></i></div>
+            <div>
+                <span id= "address"></span>
+                <i style="padding: 0px 10px;" class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+    
+        </div>     
+    </div>
+    
+    <form >
+        <div class="subDiv">
+            <div style="width: 40%;">
+                <div class="row">
+                    <div >
+                        <label class= "b" for="uname">User Name:</label>
+                        <input type="text" oninput="handleValueChange(event)" name="userName" placeholder="Your name.." required>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Designation</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" oninput="handleValueChange(event)" name="currentDesignationTitle">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Institution</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" oninput="handleValueChange(event)" name="institution">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Current Work Place</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" oninput="handleValueChange(event)" name="currentDesignationAddress">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Email</label>
+                    </div>
+                    <div>
+                        <input style= " margin-top:7px; height:40px; width: 100%;" oninput="handleValueChange(event)"  name= "email" type ="email" placeholder="abc@gmail.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                    </div>
+                </div>
+                
+                
+            </div> 
+            <div style="width: 46.5%; padding-left:5%">
+                
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Mobile</label>
+                    </div>
+                    <div>
+                        <input style= " margin-top:8px; height:40px; width: 100%;" oninput="handleValueChange(event)"  name= "mobile" type ="tel"  required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">LinkedIn Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" oninput="handleValueChange(event)"  name= "linkedInID" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Github</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" oninput="handleValueChange(event)"  name= "githubID" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" oninput="handleValueChange(event)"  name= "address" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Upload Image</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" onchange="handleImageUpload(event)" name="imageURL" accept="image/*">
+                    </div>
+                </div>
+            </div> 
+        </div>   
+        
+
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>           
+</div>  
+
+<script type="text/javascript" src="registration.js"></script>
+
+</body>
+</html>
