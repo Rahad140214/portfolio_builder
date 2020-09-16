@@ -22,7 +22,7 @@ staticData = {
         {
             "email": "mredulhasan93@gmail.com",
             "name": "MREDUL HASAN",
-            "imageURL": "file:///D:/portfolio_builder/demo.jpg",
+            "imageURL": "demo.jpg",
             "linkedIn": "mredul-hasan-1581b0115",
             "linkedInID": "https://www.linkedin.com/in/mredul-hasan-1581b0115/",
             "github": "Mredul-Hasan",
@@ -40,31 +40,25 @@ staticData = {
 
             "education": [
                 {
-                    "degree_details":{
-                        "degree": "Bachelor of Science in Computer Science & Engineering,",
-                        "department": "Computer Science & Engineering discipline,",
-                        "institution": "Khulna University, Khulna,",
-                        "result": "CGPA 3.10 out of 4.00",
-                        "duration": "2014-2018"
-                    }
+                    "degree": "Bachelor of Science in Computer Science & Engineering,",
+                    "department": "Computer Science & Engineering discipline,",
+                    "institution": "Khulna University, Khulna,",
+                    "result": "CGPA 3.10 out of 4.00",
+                    "duration": "2014-2018"
                 },
                 {
-                    "degree_details":{
-                        "degree": "Higher Secondary Certificate,",
-                        "department": "Science Group,",
-                        "institution": "Guruduyal Govt. College, Kishoregonj,",
-                        "result": "GPA 5.00 out of 5.00.",
-                        "duration": "2010-2012"
-                    }
+                    "degree": "Higher Secondary Certificate,",
+                    "department": "Science Group,",
+                    "institution": "Guruduyal Govt. College, Kishoregonj,",
+                    "result": "GPA 5.00 out of 5.00.",
+                    "duration": "2010-2012"
                 },
                 {
-                    "degree_details":{
-                        "degree": "School Secondary Certificate,",
-                        "department": "Science Group,",
-                        "institution": "Karimganj Pilot Govt. High School, Kishoregonj,",
-                        "result": "GPA 4.81 out of 5.00.",
-                        "duration": "Passing Year,<br>2010"
-                    }
+                    "degree": "School Secondary Certificate,",
+                    "department": "Science Group,",
+                    "institution": "Karimganj Pilot Govt. High School, Kishoregonj,",
+                    "result": "GPA 4.81 out of 5.00.",
+                    "duration": "Passing Year,<br>2010"
                 }
             ],
 
@@ -160,7 +154,7 @@ staticData = {
         {
             "email": "rahadmannan@gmail.com",
             "name": "Sk Rahad Mannan",
-            "imageURL": "file:///D:/portfolio_builder/rahad_pic.jpg",
+            "imageURL": "rahad_pic.jpg",
             "linkedIn": "rahad-mannan-140214",
             "linkedInID": "https://www.linkedin.com/in/mredul-hasan-1581b0115/",
             "github": "Rahad-Mannan",
