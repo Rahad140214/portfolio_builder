@@ -40,6 +40,7 @@ function handleCredentialSubmit(e){
                 authenticationChecking(isLoggedIn);
                 modal.style.display = "none";
                 userInformation(staticData.userDetail[value.id]);
+                window.location.href = "/index.html"
                 return;
             }
             else{
@@ -53,7 +54,7 @@ function handleCredentialSubmit(e){
 
 function logoutUser(e){
     e.preventDefault();
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }
 
 function authenticationChecking(isLoggedIn){

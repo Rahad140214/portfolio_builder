@@ -1,6 +1,5 @@
 //Creating a function of user details.
 function userInformation(userData){
-    debugger
     document.getElementById('userName').innerHTML = userData.name;
     document.getElementById('email').innerHTML = userData.email;
     document.getElementById('imageURL').src = userData.imageURL;

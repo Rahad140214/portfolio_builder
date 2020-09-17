@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="home.css"/>
+
+</head>
+<body onload="handleTabChange(event)">
+  <div>
+    <ul id="header">
+      <li id="user" class="active-tab" onclick="handleTabChange(event)">User</li>
+      <li id="cv" onclick="handleTabChange(event)">CV</li>
+    </ul>
+    <div style="padding-left: 15%; padding-right: 15%;">
+      <div id="dashboardContent">
+        <h4>Hello user!</h4>
+      </div>
+
+      <div id="cvContent">
+        <div class="header-div">
+          <div style="padding: 8px; display: flex">
+              <img id= "imageURL" src="" height="120" />
+              <div style="text-align: left; padding: 0px 10px;">
+                  <h3 id="userName"></h3>
+                  <span style="font-size: smaller;color: gray;">
+                    <span id="currentDesignationTitle"></span> <br>
+                    <span id="institution"></span><br>
+                    <span id="currentDesignationAddress"></span>
+                  </span>
+              </div>
+          </div>
+          
+          <div style="right: 16%; position: absolute; text-align: right;">
+            <div><a id= "email" href=""></a><i style="padding: 0px 10px;" class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div><a id= "linkedInID" href= ""> </a><i style="padding: 0px 10px;" class="fa fa-linkedin" aria-hidden="true"></i></div>
+            <div><a id= "githubID" href=""> </a><i style="padding: 0px 10px;" class="fa fa-github"></i></div>
+            <div><span id= "mobile" ></span><i style="padding: 0px 10px;" class="fa fa-phone" aria-hidden="true"></i></div>
+            <div>
+                <span id= "address"></span>
+                <i style="padding: 0px 10px;" class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+          </div>     
+      </div>
+      
+      <h4 id= "objective" style="color: #C8C8C8; text-align: center;">
+      </h4>
+  
+      <div>
+          <div style="position: relative;">
+              <span class="section-header-div"></span>
+              <b class="section-header-title">Education</b>
+          </div>
+          
+          <div id = "eduDiv" style="display: flex;">
+              <table id = "educationTable">
+              </table> 
+          </div>
+      </div> 
+  
+      <div>
+          <div style="position: relative;">
+              <span class="section-header-div"></span>
+              <b class="section-header-title" style= "left:17%;">Technical Skills & Endorsement</b>
+          </div>
+          
+          <table >
+              <tr>
+                  <td style="width: 5%; color:gray;">Language</td>
+                  <td id= "language"></td>
+              </tr>
+              <tr>
+                  <td style="width: 19%; color:gray;">Web</td>
+                  <td id="web"></td>
+              </tr>
+              <tr>
+                  <td style="width: 19%; color:gray;">Familiar With</td>
+                  <td id= "familiarWith"></td>
+              </tr>
+              <tr>
+                  <td style="width: 19%; color:gray;">Tools</td>
+                  <td id= "tools"></td>
+              </tr>
+          </table>
+      </div> 
+  
+      <div>
+          <div style="position: relative;">
+              <span class="section-header-div"></span>
+              <b class="section-header-title" style= "left:17%;">Project Experience</b>
+          </div>
+          
+          <table id="projectTbl">
+          </table>
+      </div> 
+  
+      <div>
+          <div style="position: relative;">
+              <span class="section-header-div"></span>
+              <b class="section-header-title" style= "left:17%;">Research Project</b>
+          </div>
+          
+          <table id= "researchProject">
+          </table>   
+      </div>
+  
+      <div>
+          <br>
+          <div style="position: relative;">
+              <span class="section-header-div"></span>
+              <b class="section-header-title" style= "left:17%;">Activities & Societies</b>
+          </div>
+          
+          <ul id= "uList" style="padding-left: 19%; margin: 0px;">
+          </ul>   
+      </div>
+  
+      <div>
+          <div style="position: relative;">
+              <span class="section-header-div"></span>
+              <b class="section-header-title" style= "left:17%;">Project References</b>
+          </div>
+          
+          <table id= "projectRefTbl"></table>
+      </div>
+  
+      <div>
+          <div style="position: relative;">
+              <span class="section-header-div"></span>
+              <b class="section-header-title" style= "left:17%;">References</b>
+          </div>
+          <table id = "referenceTable" class="table1">
+              <tr>
+                  <th class="th1">Name</th>
+                  <th class="th1">Designation</th>
+                  <th class="th1">Institute</th>
+                  <th class="th1">Email</th>
+              </tr>
+              <tr id = "teachRef">
+              </tr>
+          </table>
+      
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function handleTabChange(e) {
+      debugger
+      switch(e.target.id){
+        case "cv":
+          document.querySelector('#header li.active-tab').classList.remove('active-tab');
+          document.querySelector('#header li#cv').classList = "active-tab";
+          document.getElementById('dashboardContent').style.display = "none";
+          document.getElementById('cvContent').style.display = "block";
+          return
+        case "user":
+        default:
+          document.querySelector('#header li.active-tab').classList.remove('active-tab');
+          document.querySelector('#header li#user').classList = "active-tab"
+          document.getElementById('cvContent').style.display = "none";
+          document.getElementById('dashboardContent').style.display = "block";
+      }
+    }
+  </script>
+  <script type="text/javascript" src="staticData.json"></script>
+  <script type="text/javascript" src="userInfo.js"></script>
+
+<style>
+  #header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;    
+    font-weight: bold;
+  }
+  .active-tab {
+    border-bottom: 2px solid #5cb85c;
+    padding-bottom: 2vh;
+  }
+  li {
+    display: inline;
+    padding: 0px 12vw;
+    cursor: pointer;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2vh;
+  }
+</style>
+</body>
+</html> 
