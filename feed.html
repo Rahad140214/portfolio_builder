@@ -3,15 +3,23 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="home.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body onload="handleTabChange(event)">
   <div>
     <ul id="header">
-      <li id="user" class="active-tab" onclick="handleTabChange(event)">User</li>
-      <li id="cv" onclick="handleTabChange(event)">CV</li>
+      <li id="user" class="active-tab" onclick="handleTabChange(event)">
+        <img id="user" src= "user_1.jpg" style="height: 2em; margin-bottom: 0.5em;"/>
+        User
+      </li>
+      <li id="cv" onclick="handleTabChange(event)">
+        <img id="cv" src= "cv.jpg" style="height: 2em; margin-bottom: 0.5em;"/>
+        CV
+      </li>
     </ul>
-    <div style="padding-left: 15%; padding-right: 15%;">
+    <div style="padding-left: 15%; padding-right: 15%; padding-top: 1em;">
       <div id="dashboardContent">
         <h4>Hello user!</h4>
       </div>
@@ -147,7 +155,6 @@
 
   <script>
     function handleTabChange(e) {
-      debugger
       switch(e.target.id){
         case "cv":
           document.querySelector('#header li.active-tab').classList.remove('active-tab');
@@ -174,6 +181,7 @@
     padding: 0;
     text-align: center;    
     font-weight: bold;
+    padding-left: 5%;
   }
   .active-tab {
     border-bottom: 2px solid #5cb85c;
@@ -181,7 +189,7 @@
   }
   li {
     display: inline;
-    padding: 0px 12vw;
+    padding: 0px 6vw;
     cursor: pointer;
     border-bottom: 2px solid lightgray;
     padding-bottom: 2vh;
