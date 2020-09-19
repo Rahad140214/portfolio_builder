@@ -4,8 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="home.css"/>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="feed.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 </head>
 <body onload="handleTabChange(event)">
   <div>
@@ -19,9 +20,81 @@
         CV
       </li>
     </ul>
-    <div style="padding-left: 15%; padding-right: 15%; padding-top: 1em;">
+    <div style="padding-left: 15%; padding-right: 15%; padding-top: 1.5em;">
       <div id="dashboardContent">
-        <h4>Hello user!</h4>
+        <div id="card" class="card collapse show">
+          <div class="card-body" style="border-bottom: 1px solid rgba(0,0,0,.125)">
+            <h5 class="card-title">Education</h5>
+            <div class="card-text">
+              <li style="list-style-type: none;">
+                <h6 style="margin-bottom: 0rem;">Khulna University, Khulna.</h6>
+                <p style="margin-bottom: 0rem;">
+                  <span>Bachelor of Science - B.Sc</span>
+                </p>
+                <p style="margin-bottom: 0rem;">
+                  <span>Computer Science &amp; Engineering</span>
+                </p>
+                <p style="margin-bottom: 0rem;">
+                  <span>CGPA 3.10 out of 4.00</span>
+                </p>
+                <p style="color: rgb(190, 187, 187);">
+                  <span>2014-2018</span>
+                </p>
+              </li>
+
+              <li style="list-style-type: none;">
+                <h6 style="margin-bottom: 0rem;">Guruduyal Govt. College, Kishoregonj.</h6>
+                <p style="margin-bottom: 0rem;">
+                  <span>Higher Secondary Certificate - HSC</span>
+                </p>
+                <p style="margin-bottom: 0rem;">
+                  <span>Science Group</span>
+                </p>
+                <p style="margin-bottom: 0rem;">
+                  <span>GPA 5.00 out of 5.00</span>
+                </p>
+                <p style="color: rgb(190, 187, 187);">
+                  <span>2010-2012</span>
+                </p>
+              </li>
+
+              <li style="list-style-type: none;">
+                <h6 style="margin-bottom: 0rem;">Karimganj Pilot Govt. High School, Kishoregonj.</h6>
+                <p style="margin-bottom: 0rem;">
+                  <span>School Secondary Certificate - HSC</span>
+                </p>
+                <p style="margin-bottom: 0rem;">
+                  <span>Science Group</span>
+                </p>
+                <p style="margin-bottom: 0rem;">
+                  <span>GPA 4.81 out of 5.00</span>
+                </p>
+                <p style="color: rgb(190, 187, 187);">
+                  <span>2Passing Year, 2010</span>
+                </p>
+              </li>
+            </div>
+          </div>
+            <h5 class="card-title">Experience</h5>
+            <li id="328327777" class="pv-profile-section__list-item pv-education-entity pv-profile-section__card-item ember-view"><div class="display-flex justify-space-between full-width">
+              <div class="display-flex flex-column full-width">
+            <a data-control-name="background_details_school" href="/school/10321/?legacySchoolId=10321" id="ember620" class="ember-view">        <div class="pv-entity__logo">
+              <img src="https://media-exp1.licdn.com/dms/image/C560BAQE-rhL2bLUjWA/company-logo_100_100/0?e=1608768000&amp;v=beta&amp;t=Ob-GvD5tEYKLsimhI5-jO-RyyxGWZJ4If-Bu_kmjy7g" loading="lazy" alt="Khulna University" id="ember622" class="pv-entity__logo-img pv-entity__logo-img EntityPhoto-square-4 lazy-image ember-view">
+            </div>
+            
+            <div class="pv-entity__summary-info pv-entity__summary-info--background-section">
+              <div class="pv-entity__degree-info">
+                <h3 class="pv-entity__school-name t-16 t-black t-bold">Khulna University</h3>
+                  <p class="pv-entity__secondary-title pv-entity__degree-name t-14 t-black t-normal">
+                    <span class="visually-hidden">Degree Name</span>
+                    <span class="pv-entity__comma-item">Bachelor of Science - B.Sc</span>
+                  </p>
+                  <p class="pv-entity__secondary-title pv-entity__fos t-14 t-black t-normal">
+                    <span class="visually-hidden">Field Of Study</span>
+                    <span class="pv-entity__comma-item">Computer Science &amp; Engineering</span>
+                  </p>
+            </li>
+          </div> -->
       </div>
 
       <div id="cvContent">
@@ -152,48 +225,8 @@
     </div>
   </div>
 
-
-  <script>
-    function handleTabChange(e) {
-      switch(e.target.id){
-        case "cv":
-          document.querySelector('#header li.active-tab').classList.remove('active-tab');
-          document.querySelector('#header li#cv').classList = "active-tab";
-          document.getElementById('dashboardContent').style.display = "none";
-          document.getElementById('cvContent').style.display = "block";
-          return
-        case "user":
-        default:
-          document.querySelector('#header li.active-tab').classList.remove('active-tab');
-          document.querySelector('#header li#user').classList = "active-tab"
-          document.getElementById('cvContent').style.display = "none";
-          document.getElementById('dashboardContent').style.display = "block";
-      }
-    }
-  </script>
   <script type="text/javascript" src="staticData.json"></script>
   <script type="text/javascript" src="userInfo.js"></script>
-
-<style>
-  #header {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;    
-    font-weight: bold;
-    padding-left: 5%;
-  }
-  .active-tab {
-    border-bottom: 2px solid #5cb85c;
-    padding-bottom: 2vh;
-  }
-  li {
-    display: inline;
-    padding: 0px 6vw;
-    cursor: pointer;
-    border-bottom: 2px solid lightgray;
-    padding-bottom: 2vh;
-  }
-</style>
+  <script type="text/javascript" src="feed.js"></script>
 </body>
 </html> 

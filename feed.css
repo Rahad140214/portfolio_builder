@@ -1,0 +1,32 @@
+#header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;    
+    font-weight: bold;
+    padding-left: 5%;
+  }
+  .active-tab {
+    border-bottom: 2px solid #5cb85c !important;
+  }
+  #header li {
+    display: inline;
+    padding: 0px 6vw;
+    cursor: pointer;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2vh;
+  }
+
+  .sectionDiv{
+    background: #ececf0;
+    width:100%;
+    position: relative; 
+    margin:-13px 0px 0px -5px;
+    padding: 2px 0px 0px 0px;   
+    border-bottom:2px solid #25c74d;
+    box-shadow: 0px 4px 5px #aaaaaa;
+    font-size:14px;
+    font-family: 'Lato Regular', Arial;
+    text-transform:uppercase;
+    text-align:center;
+  }
