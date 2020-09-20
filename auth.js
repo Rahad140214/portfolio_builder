@@ -39,14 +39,16 @@ function handleCredentialSubmit(e){
                 isLoggedIn= true;
                 authenticationChecking(isLoggedIn);
                 modal.style.display = "none";
+                document.getElementById("homeContent").style.display = "none";
+                document.getElementById("userContent").style.display = "block";
+                handleTabChange(e)
                 userInformation(staticData.userDetail[value.id]);
-                window.location.href = "/index.html"
                 return;
             }
             else{
                 isLoggedIn= false;
                 authenticationChecking(isLoggedIn);
-                console.log("Wrong password! Try again later.");
+                alert("Wrong password! Try again later.");
             }
         }
     });
