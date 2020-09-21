@@ -22,7 +22,7 @@ staticData = {
         {
             "email": "mredulhasan93@gmail.com",
             "name": "MREDUL HASAN",
-            "imageURL": "demo.jpg",
+            "imageURL": "image/demo.jpg",
             "linkedIn": "mredul-hasan-1581b0115",
             "linkedInID": "https://www.linkedin.com/in/mredul-hasan-1581b0115/",
             "github": "Mredul-Hasan",
@@ -154,7 +154,7 @@ staticData = {
         {
             "email": "rahadmannan@gmail.com",
             "name": "Sk Rahad Mannan",
-            "imageURL": "rahad_pic.jpg",
+            "imageURL": "image/rahad_pic.jpg",
             "linkedIn": "rahad-mannan-140214",
             "linkedInID": "https://www.linkedin.com/in/mredul-hasan-1581b0115/",
             "github": "Rahad-Mannan",
