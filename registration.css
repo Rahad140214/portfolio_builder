@@ -33,8 +33,8 @@ input[type=submit]:hover {
 .subDiv {
     display: flex;
     border-radius: 5px;
-    background-color: #f2f2f2;
-    
+    background-color: #0080001c;
+    padding: 1em;
   }
 
 .col-5 {
