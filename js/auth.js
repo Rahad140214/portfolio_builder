@@ -21,6 +21,11 @@ loginCloseBtn.onclick = function() {
     modal.style.display = "none";
 }
 
+var educationAddEditModalClose = document.getElementsByClassName("educationAddEditModalClose")[0];
+educationAddEditModalClose.onclick = function() {
+    document.getElementById("educationAddEditModal").style.display = "none";
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -42,7 +47,10 @@ function handleCredentialSubmit(e){
                 document.getElementById("homeContent").style.display = "none";
                 document.getElementById("userContent").style.display = "block";
                 handleTabChange(e)
+                currentUser(value.id);
                 userInformation(staticData.userDetail[value.id]);
+                userDashBoard(staticData.userDetail[value.id]);
+                createYearDdl();
                 return;
             }
             else{
@@ -60,12 +68,28 @@ function logoutUser(e){
 }
 
 function authenticationChecking(isLoggedIn){
-if(isLoggedIn== true){
-    document.getElementById("loginBtn").style.display = 'none';
-    document.getElementById("logoutBtn").style.display = '';
+    if(isLoggedIn== true){
+        document.getElementById("loginBtn").style.display = 'none';
+        document.getElementById("logoutBtn").style.display = '';
+    }
+    else{
+        document.getElementById("loginBtn").style.display = '';
+        document.getElementById("logoutBtn").style.display = 'none';
+    }
 }
-else{
-    document.getElementById("loginBtn").style.display = '';
-    document.getElementById("logoutBtn").style.display = 'none';
-}
+
+let userId = '';
+function currentUser(selectedUser){
+    function setUserId(selectedUser){
+        userId = selectedUser
+    }
+
+    function getUserId(){
+        return userId 
+    }
+
+    if(selectedUser !== undefined)
+        return setUserId(selectedUser)
+    else
+        return getUserId()
 }

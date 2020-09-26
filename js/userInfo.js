@@ -84,27 +84,6 @@ function userInformation(userData){
     document.getElementById('familiarWith').innerHTML = userData.technicalSkills.familiarWith;
     document.getElementById('tools').innerHTML = userData.technicalSkills.tools;
 
-    //Project Experience
-    // document.getElementById('projectName').innerHTML = userData.projectExperience[0].projectName;
-    // document.getElementById('projectDescription').innerHTML = userData.projectExperience[0].projectDescription;
-    // document.getElementById('projectUrl').href = userData.projectExperience[0].projectUrl;
-
-    // document.getElementById('projectName1').innerHTML = userData.projectExperience[1].projectName;
-    // document.getElementById('projectDescription1').innerHTML = userData.projectExperience[1].projectDescription;
-    // document.getElementById('projectUrl1').href = userData.projectExperience[1].projectUrl;
-
-    // document.getElementById('projectName2').innerHTML = userData.projectExperience[2].projectName;
-    // document.getElementById('projectDescription2').innerHTML = userData.projectExperience[2].projectDescription;
-    // document.getElementById('projectUrl2').href = userData.projectExperience[2].projectUrl;
-
-    // document.getElementById('projectName3').innerHTML = userData.projectExperience[3].projectName;
-    // document.getElementById('projectDescription3').innerHTML = userData.projectExperience[3].projectDescription;
-    // document.getElementById('projectUrl3').href = userData.projectExperience[3].projectUrl;
-
-    // document.getElementById('projectName4').innerHTML = userData.projectExperience[4].projectName;
-    // document.getElementById('projectDescription4').innerHTML = userData.projectExperience[4].projectDescription;
-    // document.getElementById('projectUrl4').href = userData.projectExperience[4].projectUrl;
-
     var projectTbl = document.getElementById("projectTbl");
 
     for(let row=0; row < userData.projectExperience.length; row++){

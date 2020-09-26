@@ -40,6 +40,7 @@ staticData = {
 
             "education": [
                 {
+                    "name": "bsc",
                     "degree": "Bachelor of Science in Computer Science & Engineering,",
                     "department": "Computer Science & Engineering discipline,",
                     "institution": "Khulna University, Khulna,",
@@ -47,6 +48,7 @@ staticData = {
                     "duration": "2014-2018"
                 },
                 {
+                    "name": "hsc",
                     "degree": "Higher Secondary Certificate,",
                     "department": "Science Group,",
                     "institution": "Guruduyal Govt. College, Kishoregonj,",
@@ -54,6 +56,7 @@ staticData = {
                     "duration": "2010-2012"
                 },
                 {
+                    "name": "ssc",
                     "degree": "School Secondary Certificate,",
                     "department": "Science Group,",
                     "institution": "Karimganj Pilot Govt. High School, Kishoregonj,",
@@ -172,6 +175,7 @@ staticData = {
 
             "education": [
                 {
+                    "name": "bsc",
                     "degree": "Bachelor of Science in Computer Science & Engineering,",
                     "department": "Computer Science & Engineering discipline,",
                     "institution": "Khulna University, Khulna,",
@@ -179,6 +183,7 @@ staticData = {
                     "duration": "2014-2018"
                 },
                 {
+                    "name": "hsc",
                     "degree": "Higher Secondary Certificate,",
                     "department": "Science Group,",
                     "institution": "Govt. Sundarban Adarsha College, Khulna.",
@@ -186,6 +191,7 @@ staticData = {
                     "duration": "2010-2012"
                 },
                 {
+                    "name": "ssc",
                     "degree": "School Secondary Certificate,",
                     "department": "Science Group,",
                     "institution": "Saint Joseph's High School, Khulna.",
@@ -241,11 +247,11 @@ staticData = {
             ],
 
             "activities": [
-                "Always participated in College & University Level co-curricular activities.",
-                "Served as Class Representative (CR) several times.",
-                "Worked as potential coordinator for arranging central KUCSE Tour-2k17.",
-                "Secured 3rd position in IT Quiz contest at CSE Fest-2015.",
-                "Participated various local Project Exhibition, Programming Contest etc."
+                    "Always participated in College & University Level co-curricular activities.",
+                    "Served as Class Representative (CR) several times.",
+                    "Worked as potential coordinator for arranging central KUCSE Tour-2k17.",
+                    "Secured 3rd position in IT Quiz contest at CSE Fest-2015.",
+                    "Participated various local Project Exhibition, Programming Contest etc."
             ],
 
             "projectReference": [

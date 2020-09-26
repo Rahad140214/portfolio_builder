@@ -64,34 +64,12 @@
                     <div id="dashboardContent">
                     <div id="card" class="card collapse show">
                         <div class="card-body" style="border-bottom: 1px solid rgba(0,0,0,.125)">
-                            <button class="btn btn-primary" style="right: 2em; position: absolute; border-radius: 50%;">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            <button id="addEducation" class="btn btn-primary" style="right: 2em; position: absolute; border-radius: 50%;" onclick="handleAddEditEducation(event)">
+                                <i id="addEducation" class="fa fa-plus" aria-hidden="true"></i>
                             </button>
                             <h5 class="card-title">Education</h5>
                 
-                            <div class="card-text">
-                                <li style="list-style-type: none; display: flex; padding: 0.5em;">
-                                    <button class="btn btn-primary" style="right: 2em; position: absolute; border-radius: 50%;">
-                                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                                    </button>
-                                    <i class="fa fa-university" aria-hidden="true" style="padding: 0 1%; font-size: xx-large; align-self: center;"></i>
-                                    <div>
-                                        <h6 style="margin-bottom: 0rem;">Guruduyal Govt. College, Kishoregonj.</h6>  
-                                        <div>
-                                            Higher Secondary Certificate - HSC
-                                        </div>
-                                        <div>
-                                            Science Group
-                                        </div>
-                                        <div>
-                                            GPA 5.00 out of 5.00
-                                        </div>
-                                        <div style="color: rgb(190, 187, 187);">
-                                            2010-2012
-                                        </div>
-                                    </div>
-                                </li>
-                            </div>
+                            <div class="card-text" id="education"></div>
                         </div>
             
                         <div class="card-body" style="border-bottom: 1px solid rgba(0,0,0,.125);">
@@ -416,29 +394,78 @@
 
             <div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+                            <button type="button" class="close loginModalClose" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="loginForm" onsubmit="handleCredentialSubmit(event)" >
+                                <label><b>Username</b></label> 
+                                <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
+                    
+                                <label><b>Password</b></label>
+                                <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
+                                
+                                <button type="submit" class="btn btn-success">Login</button>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- loginModal end -->        
+            
+            <div class="modal" id="educationAddEditModal" tabindex="-1" role="dialog" aria-labelledby="educationAddEditModalLabel" aria-hidden="true" style= "padding-top: 0px;">
+                <div class="modal-dialog" role="document" style="max-width: 716px;">
                   <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="loginModalLabel">Log In</h5>
-                        <button type="button" class="close loginModalClose" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header" style= "padding-top: 10px; height: 52px;">
+                        <h5 class="modal-title" id="educationAddEditModalLabel">Education</h5>
+                        <button type="button" class="close educationAddEditModalClose" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <form id="loginForm" onsubmit="handleCredentialSubmit(event)" >
-                            <label><b>Username</b></label> 
-                            <input id="logInUsername" type="text" placeholder="Enter Username" name="uname" required> 
-                
-                            <label><b>Password</b></label>
-                            <input id="password" type="password" placeholder="Enter Password" name="psw" required> 
+                    <div class="modal-body"  style= "background-color: #0080001c;">
+                        <form id="educationAddEditForm"">
+                            <label style= "padding-top:0px;height:0px"><b>Institution</b></label> 
+                            <input id="editModalInstitution" type="text" name="uname" required style= "height: 39px"> 
+
+                            <label style= "padding-top:0px;height:0px"><b>Degree</b></label> 
+                            <input id="editModalDegree" type="text" name="uname" required style= "height: 39px"> 
                             
-                            <button type="submit" class="btn btn-success">Login</button>
-                        </form> 
+                            <label style= "padding-top:0px;height:0px"><b>Department</b></label> 
+                            <input id="editModalDepartment" type="text" name="uname" required style= "height: 39px"> 
+
+                            <label style= "padding-top:0px;height:0px"><b>Result</b></label> 
+                            <input id="editModalResult" type="text" name="uname" required style= "height: 39px"> 
+                            
+                            <label style= "padding-top:0px;height:0px"><b>Duration</b></label> 
+                            <div style = "display: flex;">
+                                
+                                <div class="col-6">
+                                    <label class="col-3" style= "padding-top:0px;">Start Year</label>
+                                    <select class="custom-select col-6" id="startYearDdl"></select>
+                                </div>
+
+                                <div class="col-6">
+                                <label class="col-3" style= "padding-top:0px;">End Year</label>
+                                <select class="custom-select col-6" id="endYearDdl"></select>
+                                </div>
+                            </div>
+                        </form>
+                    
                     </div>
+                    <div class="modal-footer" style = "background-color: #00800008; padding-top: 0px; padding-bottom: 0px; height: 52px;">
+                        <button id="addEditBtn" onclick="handleAddEditData(event)"  type="button" class="btn btn-primary" style="background-color: cadetblue;"></button>
+                    </div> 
+                    
                   </div>
                 </div>
               </div>
 
-            <!-- loginModal end -->        
+            <!-- educationAddEditModal end -->        
 
         </div>
         
@@ -447,6 +474,7 @@
     <script type="text/javascript" src="js/showSlide.js"></script>
     <script type="text/javascript" src="js/auth.js"></script>
     <script type="text/javascript" src="js/userInfo.js"></script>
+    <script type="text/javascript" src="js/userDashboard.js"></script>
     <script type="text/javascript" src="json/staticData.json"></script>
     </body>
 </html>
