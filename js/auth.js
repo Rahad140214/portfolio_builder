@@ -93,3 +93,15 @@ function currentUser(selectedUser){
     else
         return getUserId()
 }
+
+function apiData (e){
+    fetch('https://headerparser.avijitbhattacharjee.com/').then(function (res) {
+	    return res.text()
+    }).then((html) => {
+        document.getElementById('apiDataDiv').innerHTML = html;
+    }).catch(function (err) {
+        console.warn('Something went wrong', err);
+    });
+
+    document.getElementById("testModal").style.display = 'block';
+}
